@@ -1,0 +1,95 @@
+.site-branding {
+  background: url('../dev-pavlovamoscow/resources/images/header.jpg');
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.main-navigation {
+  background: #f8ebdb;
+  position: relative;
+  .menu {
+    @include center();
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .menu-item a {
+      display: block;
+      padding: 15px 10px;
+      white-space: nowrap;
+      font-size: 17px;
+      color: #292929;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &.active,
+      &:hover {
+        background: #833582;
+        color: #fff;
+      }
+    }
+    .current-menu-item a {
+      background: #833582;
+      color: #fff;
+    }
+  }
+}
+.site-header {
+  .tel {
+    color: #fdc1ee;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    text-align: right;
+    .tel-s {
+      text-shadow: 0 3px 0 rgba(21,4,18,.18);
+      color: #fff;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 26px;
+      text-decoration: none;
+    }
+  }
+  .work-time, .work-place {
+    font-weight: 700;
+    display: inline-block;
+  }
+  .work-time {
+    padding-top: 9px;
+    text-align: right;
+    margin-right: 14px;
+    color: #fff;
+    line-height: 15px;
+    font-size: 17px;
+  }
+  .work-place {
+    color: #fdc1ee;
+    font-size: 8px;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+}
+.header-contacts {
+  padding-left: 55px;
+  background: url('../dev-pavlovamoscow/resources/images/h-c.png') left top no-repeat;
+}
+.header-address {
+  margin-bottom: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-left: 15px;
+
+  font-size: 13px;
+}
+.header-tel {
+  a {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}

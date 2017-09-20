@@ -1,0 +1,40 @@
+.main-portfolio-title {
+  font-size: 20px;
+  color: #000;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  a {
+    color: #833582;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 104px;
+    height: 2px;
+    left: 50%;
+    margin-left: -52px;
+    bottom: 0;
+    background: #f8ecdd;
+  }
+}
+.main-portfolio-text {
+  font-size: 15px;
+  color: #7c7c7c;
+  margin-bottom: 12px;
+}
+
+.folio-column {
+  flex-basis: 185px;
+  margin: auto;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+  }
+}

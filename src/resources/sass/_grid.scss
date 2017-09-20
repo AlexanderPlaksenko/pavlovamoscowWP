@@ -1,0 +1,29 @@
+$jeet: (
+        gutter: 2,
+        max-width: 1170px,
+        layout-direction: LTR,
+        parent-first: false
+);
+.wrap {
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex: 1 1 auto;
+    width: auto;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
