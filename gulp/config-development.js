@@ -1,4 +1,9 @@
 var fs           = require('fs');
+
+if (!process.env.PWD) {
+    process.env.PWD = process.cwd();
+}
+
 var packageConfig = require(process.env.PWD + '/package.json');
 
 var dest = './wp-content/themes/dev-' + packageConfig.name;
